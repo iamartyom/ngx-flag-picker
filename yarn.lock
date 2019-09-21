@@ -3450,6 +3450,11 @@ find-up@^4.0.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
+flag-icon-css@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/flag-icon-css/-/flag-icon-css-3.4.0.tgz#7356dc73641a6406efd21783d73cabd589046f99"
+  integrity sha512-5W4a1QBmej8yTJKbr+hX2gwgk21Wd3Pe3sEHpLVBSfcfnxR/C7QGHq01zViW5JIsw2vbYroGAqbUFe8APEZygg==
+
 flatted@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"

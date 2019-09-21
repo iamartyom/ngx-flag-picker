@@ -63,7 +63,8 @@
               "projects/example/src/assets"
             ],
             "styles": [
-              "projects/example/src/styles.scss"
+              "projects/example/src/styles.scss",
+              "node_modules/flag-icon-css/css/flag-icon.min.css"
             ],
             "scripts": []
           },
