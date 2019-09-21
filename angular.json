@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-select-flags": {
+      "projectType": "library",
+      "root": "projects/ngx-select-flags",
+      "sourceRoot": "projects/ngx-select-flags/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-select-flags/tsconfig.lib.json",
+            "project": "projects/ngx-select-flags/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-select-flags/src/test.ts",
+            "tsConfig": "projects/ngx-select-flags/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-select-flags/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-select-flags/tsconfig.lib.json",
+              "projects/ngx-select-flags/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "ngx-select-flags"
+}
