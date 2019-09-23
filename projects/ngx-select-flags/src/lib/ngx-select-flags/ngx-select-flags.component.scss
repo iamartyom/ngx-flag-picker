@@ -1,0 +1,26 @@
+.select-flags {
+  display: inline-block;
+  position: relative;
+  color: #50575e;
+  text-align: left;
+}
+  
+.flag-icon {
+  margin-right: 6px;
+}
+  
+.country-flag {
+  cursor: pointer;
+  white-space: nowrap;
+}
+  
+.list-country-flags {
+  width: 100%;
+  position: absolute;
+  max-height: 200px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #c7c7c7;
+  overflow: auto;
+  z-index: 99999;
+}
