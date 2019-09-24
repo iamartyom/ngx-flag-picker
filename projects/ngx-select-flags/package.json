@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "github:artyomgr/ngx-select-flags",
   "peerDependencies": {
-    "@angular/common": "^8.2.7",
-    "@angular/core": "^8.2.7"
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0"
   }
 }
