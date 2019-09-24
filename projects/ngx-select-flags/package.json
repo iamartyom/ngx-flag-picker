@@ -1,6 +1,8 @@
 {
   "name": "ngx-select-flags",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "github:temagr/ngx-select-flags",
   "peerDependencies": {
     "@angular/common": "^8.2.7",
     "@angular/core": "^8.2.7"
