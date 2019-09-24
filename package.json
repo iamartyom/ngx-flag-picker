@@ -2,7 +2,7 @@
   "name": "ngx-select-flags",
   "version": "1.0.0",
   "license": "MIT",
-  "repository": "github:temagr/ngx-select-flags",
+  "repository": "github:artyomgr/ngx-select-flags",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
