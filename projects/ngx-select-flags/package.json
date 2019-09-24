@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "repository": "github:artyomgr/ngx-select-flags",
+  "keywords": [
+    "angular",
+    "angular8",
+    "ngx",
+    "flags",
+    "countries"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"
