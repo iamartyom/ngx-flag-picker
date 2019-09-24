@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, Renderer2, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'ngx-select-flags',
@@ -6,7 +6,14 @@ import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, Renderer
   styleUrls: ['./ngx-select-flags.component.scss']
 })
 export class NgxSelectFlagsComponent {
-  isShowListCountryFlags = false;
+  private _isShowListCountryFlags = false;
+  set isShowListCountryFlags(value: boolean) {
+    this._isShowListCountryFlags = value;
+    this.changeDetectorRef.markForCheck();
+  }
+  get isShowListCountryFlags(): boolean {
+    return this._isShowListCountryFlags;
+  }
 
   @Input() selectedCountryCode: string;
   @Input() countryCodes: string[];
@@ -19,6 +26,7 @@ export class NgxSelectFlagsComponent {
 
   constructor(
     private renderer: Renderer2,
+    private changeDetectorRef: ChangeDetectorRef,
   ) { }
 
   public toggleListCountryFlags(): void {
