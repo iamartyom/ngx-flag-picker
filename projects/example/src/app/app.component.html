@@ -1,1 +1,9 @@
-<ngx-select-flags [selectedCountryCode]="'us'" [countryCodes]="['us', 'ru', 'br']"></ngx-select-flags>
+<div class="container">
+  <ngx-select-flags
+    [selectedCountryCode]="selectedCountryCode"
+    [countryCodes]="countryCodes"
+    (changedCountryCode)="changeSelectedCountryCode($event)">
+  </ngx-select-flags>
+  <h2>Selected country code:</h2>
+  <h1>{{ selectedCountryCode }}</h1>
+</div>

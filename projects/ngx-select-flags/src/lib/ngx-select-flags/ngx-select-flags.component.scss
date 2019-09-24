@@ -4,18 +4,18 @@
   color: #50575e;
   text-align: left;
 }
-  
+
 .flag-icon {
   margin-right: 6px;
 }
-  
+
 .country-flag {
   cursor: pointer;
   white-space: nowrap;
 }
-  
+
 .list-country-flags {
-  width: 100%;
+  width: -moz-available;
   position: absolute;
   max-height: 200px;
   margin-top: 10px;
