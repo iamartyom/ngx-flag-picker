@@ -30,4 +30,4 @@ export class AppComponent {
 }
 ```
 
-## [Demo](https://artyomgr.github.io/ngx-select-flags/)
+## [Demo](https://iamartyom.github.io/ngx-select-flags/)
