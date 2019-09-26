@@ -30,4 +30,20 @@ export class AppComponent {
 }
 ```
 
+## Input parameters:
+
+Name | Type
+------------ | -------------
+selectedCountryCode | string
+countryCodes | string[]
+showFlags | boolean
+showLabels | boolean
+showArrow | boolean
+
+## Output parameters:
+
+Name | Type
+------------ | -------------
+changedCountryCode | EventEmitter\<string>
+
 ## [Demo](https://iamartyom.github.io/ngx-select-flags/)
