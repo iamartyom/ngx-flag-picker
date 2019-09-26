@@ -5,12 +5,13 @@
   text-align: left;
 }
 
-.flag-icon {
+.flag-icon-margin-right {
   margin-right: 6px;
 }
 
 .country-flag {
   cursor: pointer;
+  outline: none;
   white-space: nowrap;
 }
 

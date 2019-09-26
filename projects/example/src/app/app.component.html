@@ -1,9 +1,32 @@
 <div class="container">
-  <ngx-select-flags
-    [selectedCountryCode]="selectedCountryCode"
-    [countryCodes]="countryCodes"
-    (changedCountryCode)="changeSelectedCountryCode($event)">
-  </ngx-select-flags>
-  <h2>Selected country code:</h2>
-  <h1>{{ selectedCountryCode }}</h1>
+  <div>
+    <ngx-select-flags
+      [selectedCountryCode]="selectedCountryCode"
+      [countryCodes]="countryCodes"
+      (changedCountryCode)="changeSelectedCountryCode($event)">
+    </ngx-select-flags>
+    <h4 class="parameter-text">showFlags = false</h4>
+    <ngx-select-flags
+      [selectedCountryCode]="selectedCountryCode"
+      [countryCodes]="countryCodes"
+      [showFlags]="false"
+      (changedCountryCode)="changeSelectedCountryCode($event)">
+    </ngx-select-flags>
+    <h4 class="parameter-text">showLabels = false</h4>
+    <ngx-select-flags
+      [selectedCountryCode]="selectedCountryCode"
+      [countryCodes]="countryCodes"
+      [showLabels]="false"
+      (changedCountryCode)="changeSelectedCountryCode($event)">
+    </ngx-select-flags>
+    <h4 class="parameter-text">showArrow = false</h4>
+    <ngx-select-flags
+      [selectedCountryCode]="selectedCountryCode"
+      [countryCodes]="countryCodes"
+      [showArrow]="false"
+      (changedCountryCode)="changeSelectedCountryCode($event)">
+    </ngx-select-flags>
+    <h4 class="parameter-text">Selected country code:</h4>
+    <h1>{{ selectedCountryCode }}</h1>
+  </div>
 </div>

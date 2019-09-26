@@ -1,14 +1,14 @@
 <div class="select-flags" #selectFlags>
   <div class="country-flag" tabindex="0" (click)="toggleListCountryFlags()">
-    <span class="flag-icon flag-icon-{{ selectedCountryCode }}"></span>
-    <span class="country-code">{{ selectedCountryCode | uppercase }}</span>
-    <span>▾</span>
+    <span *ngIf="showFlags" [ngClass]="{ 'flag-icon-margin-right': showLabels }" class="flag-icon flag-icon-{{ selectedCountryCode }}"></span>
+    <span *ngIf="showLabels" class="country-code">{{ selectedCountryCode | uppercase }}</span>
+    <span *ngIf="showArrow">▾</span>
   </div>
   <div class="list-country-flags" *ngIf="isShowListCountryFlags">
     <div class="country-flag" tabindex="0" *ngFor="let code of countryCodes" (click)="changeSelectedCountryCode(code)">
       <span>
-        <span class="flag-icon flag-icon-{{ code }}"></span>
-        <span class="country-code">{{ code | uppercase }}</span>
+        <span *ngIf="showFlags" [ngClass]="{ 'flag-icon-margin-right': showLabels }" class="flag-icon flag-icon-{{ code }}"></span>
+        <span *ngIf="showLabels" class="country-code">{{ code | uppercase }}</span>
       </span>
     </div>
   </div>

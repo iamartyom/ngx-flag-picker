@@ -18,6 +18,10 @@ export class NgxSelectFlagsComponent {
   @Input() selectedCountryCode: string;
   @Input() countryCodes: string[];
 
+  @Input() showFlags = true;
+  @Input() showLabels = true;
+  @Input() showArrow = true;
+
   @Output() changedCountryCode = new EventEmitter<string>();
 
   @ViewChild('selectFlags', { static: false }) selectFlagsElementRef: ElementRef;
