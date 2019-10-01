@@ -18,6 +18,8 @@ export class NgxSelectFlagsComponent {
   @Input() selectedCountryCode: string;
   @Input() countryCodes: string[];
 
+  @Input() customLabels: Record<string, string>;
+
   @Input() showFlags = true;
   @Input() showLabels = true;
   @Input() showArrow = true;
@@ -32,6 +34,10 @@ export class NgxSelectFlagsComponent {
     private renderer: Renderer2,
     private changeDetectorRef: ChangeDetectorRef,
   ) { }
+
+  getCountryLabel(countryCode: string): string {
+    return (this.customLabels && this.customLabels[countryCode]) ? this.customLabels[countryCode] : countryCode.toUpperCase();
+  }
 
   public toggleListCountryFlags(): void {
     if (this.isShowListCountryFlags) {

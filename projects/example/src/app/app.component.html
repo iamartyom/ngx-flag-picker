@@ -5,6 +5,13 @@
       [countryCodes]="countryCodes"
       (changedCountryCode)="changeSelectedCountryCode($event)">
     </ngx-select-flags>
+    <h4 class="parameter-text">customLabels</h4>
+    <ngx-select-flags
+      [selectedCountryCode]="selectedCountryCode"
+      [countryCodes]="countryCodes"
+      [customLabels]="customLabels"
+      (changedCountryCode)="changeSelectedCountryCode($event)">
+    </ngx-select-flags>
     <h4 class="parameter-text">showFlags = false</h4>
     <ngx-select-flags
       [selectedCountryCode]="selectedCountryCode"

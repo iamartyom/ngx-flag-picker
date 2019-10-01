@@ -7,8 +7,16 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  selectedCountryCode = 'us';
-  countryCodes = ['us', 'lu', 'de', 'bs', 'br', 'pt'];
+  selectedCountryCode = 'be';
+  countryCodes = ['be', 'lu', 'de', 'bs', 'br', 'pt'];
+  customLabels = {
+    'be': 'Belgium',
+    'lu': 'Luxembourg',
+    'de': 'Germany',
+    'bs': 'Bahamas',
+    'br': 'Brazil',
+    'pt': 'Portugal'
+  };
 
   changeSelectedCountryCode(value: string): void {
     this.selectedCountryCode = value;
