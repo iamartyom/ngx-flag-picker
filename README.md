@@ -36,6 +36,7 @@ Name | Type
 ------------ | -------------
 selectedCountryCode | string
 countryCodes | string[]
+customLabels | Record\<string, string>
 showFlags | boolean
 showLabels | boolean
 showArrow | boolean
