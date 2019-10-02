@@ -36,7 +36,9 @@ export class NgxSelectFlagsComponent {
   ) { }
 
   getCountryLabel(countryCode: string): string {
-    return (this.customLabels && this.customLabels[countryCode]) ? this.customLabels[countryCode] : countryCode.toUpperCase();
+    return (this.customLabels && this.customLabels[countryCode]) ?
+      this.customLabels[countryCode] :
+      countryCode ? countryCode.toUpperCase() : '';
   }
 
   public toggleListCountryFlags(): void {
