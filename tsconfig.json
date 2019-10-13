@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ngx-select-flags": [
-        "dist/ngx-select-flags"
+      "ngx-flag-picker": [
+        "dist/ngx-flag-picker"
       ],
-      "ngx-select-flags/*": [
-        "dist/ngx-select-flags/*"
+      "ngx-flag-picker/*": [
+        "dist/ngx-flag-picker/*"
       ]
     }
   },

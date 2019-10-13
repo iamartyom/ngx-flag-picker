@@ -1,8 +1,8 @@
 {
-  "name": "ngx-select-flags",
+  "name": "ngx-flag-picker",
   "version": "1.4.0",
   "license": "MIT",
-  "repository": "github:iamartyom/ngx-select-flags",
+  "repository": "github:iamartyom/ngx-flag-picker",
   "keywords": [
     "angular",
     "angular8",

@@ -1,20 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgxFlagPickerComponent } from './ngx-flag-picker.component';
 
-import { NgxSelectFlagsComponent } from './ngx-select-flags.component';
-
-describe('NgxSelectFlagsComponent', () => {
-  let component: NgxSelectFlagsComponent;
-  let fixture: ComponentFixture<NgxSelectFlagsComponent>;
+describe('NgxFlagPickerComponent', () => {
+  let component: NgxFlagPickerComponent;
+  let fixture: ComponentFixture<NgxFlagPickerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxSelectFlagsComponent ]
+      declarations: [ NgxFlagPickerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxSelectFlagsComponent);
+    fixture = TestBed.createComponent(NgxFlagPickerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { NgxSelectFlagsModule } from 'ngx-select-flags';
+import { NgxFlagPickerModule } from 'ngx-flag-picker';
 
 @NgModule({
   declarations: [
@@ -9,7 +9,7 @@ import { NgxSelectFlagsModule } from 'ngx-select-flags';
   ],
   imports: [
     BrowserModule,
-    NgxSelectFlagsModule,
+    NgxFlagPickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

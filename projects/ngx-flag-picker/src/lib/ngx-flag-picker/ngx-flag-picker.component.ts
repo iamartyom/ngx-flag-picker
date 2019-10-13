@@ -1,11 +1,11 @@
 import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, Renderer2, ChangeDetectorRef } from '@angular/core';
 
 @Component({
-  selector: 'ngx-select-flags',
-  templateUrl: './ngx-select-flags.component.html',
-  styleUrls: ['./ngx-select-flags.component.scss']
+  selector: 'ngx-flag-picker',
+  templateUrl: './ngx-flag-picker.component.html',
+  styleUrls: ['./ngx-flag-picker.component.scss']
 })
-export class NgxSelectFlagsComponent {
+export class NgxFlagPickerComponent {
   private _isShowListCountryFlags = false;
   set isShowListCountryFlags(value: boolean) {
     this._isShowListCountryFlags = value;
