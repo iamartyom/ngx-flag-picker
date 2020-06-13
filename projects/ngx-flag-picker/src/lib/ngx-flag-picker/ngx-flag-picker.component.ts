@@ -26,7 +26,7 @@ export class NgxFlagPickerComponent {
 
   @Output() changedCountryCode = new EventEmitter<string>();
 
-  @ViewChild('selectFlags', { static: false }) selectFlagsElementRef: ElementRef;
+  @ViewChild('selectFlags') selectFlagsElementRef: ElementRef;
 
   outsideClickSelectFlags = () => {};
 
