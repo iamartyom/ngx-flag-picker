@@ -14,13 +14,13 @@
           "options": {
             "tsConfig": "projects/ngx-flag-picker/tsconfig.lib.json",
             "project": "projects/ngx-flag-picker/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ngx-flag-picker/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -30,14 +30,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/ngx-flag-picker/tsconfig.lib.json",
-              "projects/ngx-flag-picker/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/ngx-flag-picker/**/*.ts",
+              "projects/ngx-flag-picker/**/*.html"
             ]
           }
         }
@@ -137,15 +134,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/example/tsconfig.app.json",
-              "projects/example/tsconfig.spec.json",
-              "projects/example/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/example/**/*.ts",
+              "projects/example/**/*.html"
             ]
           }
         },
@@ -162,6 +155,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ngx-flag-picker"
 }
