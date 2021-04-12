@@ -6,15 +6,6 @@ import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, Renderer
   styleUrls: ['./ngx-flag-picker.component.scss']
 })
 export class NgxFlagPickerComponent {
-  private _isShowListCountryFlags = false;
-  set isShowListCountryFlags(value: boolean) {
-    this._isShowListCountryFlags = value;
-    this.changeDetectorRef.markForCheck();
-  }
-  get isShowListCountryFlags(): boolean {
-    return this._isShowListCountryFlags;
-  }
-
   @Input() selectedCountryCode: string;
   @Input() countryCodes: string[];
 
@@ -28,6 +19,15 @@ export class NgxFlagPickerComponent {
 
   @ViewChild('selectFlags') selectFlagsElementRef: ElementRef;
 
+  private _isShowListCountryFlags = false;
+  set isShowListCountryFlags(value: boolean) {
+    this._isShowListCountryFlags = value;
+    this.changeDetectorRef.markForCheck();
+  }
+  get isShowListCountryFlags(): boolean {
+    return this._isShowListCountryFlags;
+  }
+
   outsideClickSelectFlags = () => {};
 
   constructor(
@@ -39,6 +39,12 @@ export class NgxFlagPickerComponent {
     return (this.customLabels && this.customLabels[countryCode]) ?
       this.customLabels[countryCode] :
       countryCode ? countryCode.toUpperCase() : '';
+  }
+
+  public changeSelectedCountryCode(value: string): void {
+    this.selectedCountryCode = value;
+    this.closeListCountryFlags();
+    this.changedCountryCode.emit(this.selectedCountryCode);
   }
 
   public toggleListCountryFlags(): void {
@@ -57,12 +63,6 @@ export class NgxFlagPickerComponent {
   private closeListCountryFlags(): void {
     this.isShowListCountryFlags = false;
     this.unsubscribeOutsideClickSelectFlags();
-  }
-
-  public changeSelectedCountryCode(value: string): void {
-    this.selectedCountryCode = value;
-    this.closeListCountryFlags();
-    this.changedCountryCode.emit(this.selectedCountryCode);
   }
 
   private subscribeOutsideClickSelectFlags(): void {
