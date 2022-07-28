@@ -1,6 +1,6 @@
 {
   "name": "ngx-flag-picker",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "license": "MIT",
   "author": "Artyom Gritsuk",
   "repository": "github:iamartyom/ngx-flag-picker",
@@ -11,6 +11,7 @@
     "angular10",
     "angular11",
     "angular12",
+    "angular13",
     "ngx",
     "flags",
     "countries"
