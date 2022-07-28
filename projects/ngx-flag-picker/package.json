@@ -1,6 +1,6 @@
 {
   "name": "ngx-flag-picker",
-  "version": "13.0.0",
+  "version": "14.0.0",
   "license": "MIT",
   "author": "Artyom Gritsuk",
   "repository": "github:iamartyom/ngx-flag-picker",
@@ -12,6 +12,7 @@
     "angular11",
     "angular12",
     "angular13",
+    "angular14",
     "ngx",
     "flags",
     "countries"
@@ -20,7 +21,7 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^13.0.0",
-    "@angular/core": "^13.0.0"
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0"
   }
 }
